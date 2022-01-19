@@ -50,13 +50,13 @@ public class ZipFile1 {
         }}
 
     @Test
-    void zipTest() throws Exception {
+    void zipTestj() throws Exception {
 try
-    (InputStream stream = cl.getResourceAsStream("Example.zip");
-    ZipInputStream zis = new ZipInputStream(stream)){
+    (InputStream stream = cl.getResourceAsStream("example.zip");
+     ZipInputStream zis = new ZipInputStream(stream)){
     ZipEntry zipEntry;
     while ((zipEntry = zis.getNextEntry()) != null){
-        assertThat(zipEntry.getName()).isEqualTo("tereer.csv");
+        assertThat(zipEntry.getName()).isEqualTo("qw.txt");
     }
     }
 
